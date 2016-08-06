@@ -1,0 +1,11 @@
+<form method="post" action="/exam/index">
+	{% csrf_token %}
+	<input type="radio" name="que1" onChange="this.form.submit();" id ="answer1" value="1">Option 1</input>
+	<input type="radio" name="que1" onChange="this.form.submit();" id ="answer2" value="2">Option 2</input>
+	<input type="radio" name="que1" onChange="this.form.submit();" id ="answer3" value="3">Option 3</input>
+	<input type="radio" name="que1" onChange="this.form.submit();" id ="answer4" value="4">Option 4</input>
+</form>
+<script>
+document.getElementById("_answer1").checked = true;
+</script>
+{{ans}}
